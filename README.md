@@ -15,4 +15,4 @@ You only need to add the SwiftDNICIFNITValidator.swift class to your project and
 # Autors
    Reinier Melian Massip email: rmelian2014@gmail.com
    
-   Vladimir Sanchez Mondeja email: vsanchez2187@gmail.com on 12/12/16.
+   Vladimir Sanchez Mondeja email: vsanchez2187@gmail.com 
