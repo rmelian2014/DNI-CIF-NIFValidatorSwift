@@ -72,13 +72,24 @@ class SwiftDNICIFNITValidator: NSObject {
     
     static func validateCIF(cifCandidate:String) -> Bool
     {
+        if(cifCandidate.characters.count != 9)
+        {
+            return false
+        }
+        
         let valueCif = cifCandidate.substring(with: cifCandidate.index(after:cifCandidate.startIndex) ..< cifCandidate.index(before:cifCandidate.endIndex))
         var suma = 0
         
         var currIndex = valueCif.index(after:valueCif.startIndex)
         while currIndex < valueCif.endIndex {
-            suma += Int(valueCif.substring(with: currIndex..<valueCif.index(after: currIndex)))!
-            currIndex = valueCif.index(currIndex, offsetBy: 2)
+            if(Int(valueCif.substring(with: currIndex..<valueCif.index(after: currIndex))) != nil)
+            {
+                suma += Int(valueCif.substring(with: currIndex..<valueCif.index(after: currIndex)))!
+                currIndex = valueCif.index(currIndex, offsetBy: 2)
+            }else
+            {
+                return false
+            }
         }
         
         var suma2 = 0
@@ -107,7 +118,7 @@ class SwiftDNICIFNITValidator: NSObject {
         
         let unidadStr = "\(totalSum)"
         var unidadInt = 10 - Int(unidadStr.substring(with: unidadStr.index(before: unidadStr.endIndex) ..< unidadStr.endIndex))!
-    
+        
         let primerCaracter = cifCandidate.substring(to: cifCandidate.index(after:cifCandidate.startIndex)).uppercased()
         let lastchar = cifCandidate.substring(from: cifCandidate.index(before: cifCandidate.endIndex)).uppercased()
         var lastcharchar = lastchar[lastchar.startIndex]
@@ -155,5 +166,4 @@ class SwiftDNICIFNITValidator: NSObject {
         
         return false;
     }
-    
 }

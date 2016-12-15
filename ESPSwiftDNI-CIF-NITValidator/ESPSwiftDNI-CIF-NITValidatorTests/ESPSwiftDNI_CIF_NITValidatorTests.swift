@@ -13,6 +13,9 @@ class ESPSwiftDNI_CIF_NITValidatorTests: XCTestCase {
     
     func testSwiftDNICIFNITValidator()
     {
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "  aaaa41d") == false, "wrong answer")
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "54aaaa41d") == false, "wrong answer")
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "54") == false, "wrong answer")
         XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "a58818501") == true, "wrong answer")
         XCTAssert(SwiftDNICIFNITValidator.validateDNI(candidateDNI: "38119995w") == true, "wrong answer")
         XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "F08216863") == true, "wrong answer")
