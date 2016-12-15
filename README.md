@@ -12,11 +12,7 @@ You only need to add the SwiftDNICIFNITValidator.swift class to your project and
   SwiftDNICIFNITValidator.validateCIF(cifCandidate: "F08216863") will return true
   SwiftDNICIFNITValidator.validateCIF(cifCandidate: "  aaaa41d") will return false
   
-   if(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "F08216863"))
-        {
-            print("IS VALID")
-        }
-        
 # Autors
    Reinier Melian Massip email: rmelian2014@gmail.com
+   
    Vladimir Sanchez Mondeja email: vsanchez2187@gmail.com on 12/12/16.
