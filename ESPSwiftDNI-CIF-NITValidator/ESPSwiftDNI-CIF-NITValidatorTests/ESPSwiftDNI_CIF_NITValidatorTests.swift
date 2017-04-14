@@ -21,7 +21,7 @@ class ESPSwiftDNI_CIF_NITValidatorTests: XCTestCase {
         XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "F08216863") == true, "wrong answer")
         XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "j22382949") == true, "wrong answer")
         XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "P0200100f") == true, "wrong answer")
-        //DNIS1
+        //TEST VALUES GETTED FROM THIS WEBPAGE http://generadordni.es/
         XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "62650219J") == true, "wrong answer")
         XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "35761086L") == true, "wrong answer")
         XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "07348726L") == true, "wrong answer")
@@ -87,6 +87,40 @@ class ESPSwiftDNI_CIF_NITValidatorTests: XCTestCase {
         XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "F79247318") == true, "wrong answer")
         XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "S6981484F") == true, "wrong answer")
         XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "V7937974I") == true, "wrong answer")
+        //NIF 3
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "14540135H") == true, "wrong answer")
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "08819047L") == true, "wrong answer")
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "13496084Y") == true, "wrong answer")
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "99039409Y") == true, "wrong answer")
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "48464231B") == true, "wrong answer")
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "32394101G") == true, "wrong answer")
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "66383371N") == true, "wrong answer")
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "67239784C") == true, "wrong answer")
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "42251394A") == true, "wrong answer")
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "64432178R") == true, "wrong answer")
+        //NIE 3
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "Z9788982A") == true, "wrong answer")
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "X8586267E") == true, "wrong answer")
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "Y4829080Z") == true, "wrong answer")
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "Y3334345A") == true, "wrong answer")
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "Z5556891G") == true, "wrong answer")
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "Y8340579B") == true, "wrong answer")
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "Y3608498L") == true, "wrong answer")
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "X8281577J") == true, "wrong answer")
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "Y2573188P") == true, "wrong answer")
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "Y2254506Z") == true, "wrong answer")
+        //CIF 3
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "A14139554") == true, "wrong answer")
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "A55491344") == true, "wrong answer")
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "Q7185943C") == true, "wrong answer")
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "B47951835") == true, "wrong answer")
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "C70587258") == true, "wrong answer")
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "B96955224") == true, "wrong answer")
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "E86011681") == true, "wrong answer")
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "R4725128E") == true, "wrong answer")
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "P7510638E") == true, "wrong answer")
+        XCTAssert(SwiftDNICIFNITValidator.validateCIF(cifCandidate: "S6061053B") == true, "wrong answer")
+        
     }
     
 }
