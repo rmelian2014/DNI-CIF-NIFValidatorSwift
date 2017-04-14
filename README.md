@@ -7,7 +7,7 @@ we search and results are almost 0, and in Swift well we can´t find any except 
 # Usage
 You only need to add the SwiftDNICIFNITValidator.swift class to your project and use the static method called validateCIF this will return true if is valid or false if not
 
-# TestNumbers
+# Test Numbers
 Almost all test numbers came from http://generadordni.es/
 
 # Example
