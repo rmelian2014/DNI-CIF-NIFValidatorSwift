@@ -1,4 +1,4 @@
-# Spanish DNI, CIF, NIE validator
+# Spanish DNI, CIF, NIF validator
 
 # Description
 This is a single class repo, intended to help with Spain DNI, CIF, NIT validation, was created because the lack of this in the internet,
